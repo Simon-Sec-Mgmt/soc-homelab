@@ -1,0 +1,9 @@
+<!--
+  À coller dans C:\Program Files (x86)\ossec-agent\ossec.conf,
+  juste avant la balise de fermeture </ossec_config>.
+  L'agent lit alors le journal Sysmon et l'envoie au manager.
+-->
+<localfile>
+  <location>Microsoft-Windows-Sysmon/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
